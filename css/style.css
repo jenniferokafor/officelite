@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    --blue: rgba(81, 117, 255, 1);
+    --light-blue: rgba(130, 156, 255, 1);
+    --grey: rgba(116, 123, 149, 1);
+    --dark-grey: rgba(51, 57, 80, 1);
+    --darker-grey: rgba(37, 41, 58, 1);
+    --orange: rgba(240, 91, 91, 1);
+}
+
+/* general styling */
+
+
+/* button styling */
+.link-button {
+    border: none;
+    width: 10.688rem;
+    height: 3.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
+
+/*hero section */
+
+.logo {
+    padding: 0;
+    margin: 5.063rem 70rem 6.375rem 10.313rem;
+}
+
+.hero-wrapper {
+    margin: 6.375rem 10.313rem 27.375rem 10.313rem;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 39.688rem 29.688rem;
+    grid-template-rows: 33.188rem;
+    grid-template-areas: 
+    "a b"
+    ;
+}
+
+.hero-text {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-heading {
+    grid-area: a;
+    width: 33.75rem;
+    height: 13.5rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+
+.hero-paragraph {
+    width: 33.75rem;
+    height: 7.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+}
+
+/* hero button styling */
+
+.hero-button {
+    background-color: var(--blue);
+    color: white;
+    box-shadow: 1px 7px 9px 0px rgba(0,0,0,0.15);
+}
+
+.hero-button:hover {
+    background-color: var(--light-blue);
+    cursor: pointer;
+}
+
+.hero-button:active {
+    opacity: 75%;
+}
+
+.illustration-charts {
+    grid-area: b;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pricing {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
