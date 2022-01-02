@@ -14,6 +14,10 @@
     --orange: rgba(240, 91, 91, 1);
 }
 
+body {
+    background-color: #F2F2F2;;
+}
+
 /* general styling */
 
 
@@ -22,12 +26,10 @@
     border: none;
     width: 10.688rem;
     height: 3.5rem;
-    border-radius: 50px;
+    border-radius: 28px;
     font-size: 1rem;
     font-weight: 700;
 }
-
-
 
 
 /*hero section */
@@ -35,6 +37,19 @@
 .logo {
     padding: 0;
     margin: 5.063rem 70rem 6.375rem 10.313rem;
+    position: relative;
+}
+
+.svg-lines-header {
+    position: absolute;
+    top: -26.188rem;
+    left: 41rem;
+    z-index: -1;
+}
+
+.svg-lines-header svg {
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero-wrapper {
@@ -52,6 +67,7 @@
 
 .hero-text {
     grid-area: a;
+    height: 24.25rem;
     display: flex;
     flex-direction: column;
 }
@@ -59,18 +75,21 @@
 .hero-heading {
     grid-area: a;
     width: 33.75rem;
-    height: 13.5rem;
+    height: 12rem;
     font-size: 3.5rem;
     line-height: 4rem;
     font-weight: 700;
+    color: var(--dark-grey);
+    
 }
 
 .hero-paragraph {
     width: 33.75rem;
-    height: 7.25rem;
+    height: 5.25rem;
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 400;
+    color: var(--grey);
 }
 
 /* hero button styling */
@@ -79,6 +98,7 @@
     background-color: var(--blue);
     color: white;
     box-shadow: 1px 7px 9px 0px rgba(0,0,0,0.15);
+    margin-top: 2rem;
 }
 
 .hero-button:hover {
@@ -94,9 +114,66 @@
     grid-area: b;
 }
 
+/* pricing section */
+.pricing-section {
+    margin-left: 10.313rem;
+    margin-right: 10.313rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.875rem;
+}
 
+.plans {
+    display: flex;
+    flex-direction: column;
+    width: 21.875rem;
+    height: 31.75rem;
+    padding: 2.5rem 0;
+    border-radius: 13px;
+    align-items: center;
+}
 
+.pro-plan {
+    color: white;
+    background-color: var(--blue);
+}
 
+.basic-plan, .ultimate-plan {
+    background-color: white;
+    color: var(--dark-grey);
+}
+
+.plan-name {
+    font-size: 1.25rem;
+    height: 4.25rem;
+    font-weight: 700;
+}
+.pricing {
+    font-size: 3.5rem;
+    height: 4.375rem;
+    font-weight: 700;
+}
+
+.users {
+    font-size: 1rem;
+    height: 5.25rem;
+    font-weight: 400;
+}
+.benefits {
+    font-size: 1rem;
+    height: 2.75rem;
+    font-weight: 400;
+}
+
+.basic-ult-button {
+    background-color: rgb(220,228,252);
+    color: var(--blue);
+}
+
+.pro-button {
+    color: var(--blue);
+    background-color: white;
+}
 
 
 
