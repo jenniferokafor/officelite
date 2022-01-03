@@ -14,8 +14,8 @@
     --orange: rgba(240, 91, 91, 1);
 }
 
-body {
-    background-color: #F2F2F2;;
+.body-class {
+    background-color: #F2F2F2;
 }
 
 /* general styling */
@@ -63,6 +63,7 @@ body {
     grid-template-areas: 
     "a b"
     ;
+    position: relative;
 }
 
 .hero-text {
@@ -121,6 +122,9 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: 1.875rem;
+    position: absolute;
+    bottom: -90%;
+    left: 0;
 }
 
 .plans {
@@ -136,6 +140,7 @@ body {
 .pro-plan {
     color: white;
     background-color: var(--blue);
+    position: relative;
 }
 
 .basic-plan, .ultimate-plan {
@@ -175,14 +180,25 @@ body {
     background-color: white;
 }
 
-
-
-
-
-
-
-.pricing {
-    font-size: 3.5rem;
-    line-height: 4rem;
-    font-weight: 700;
+.pro-plan-svg {
+    position: absolute;
+    top: -60%;
+    left: -75%;
+    
 }
+
+/* footer */
+ footer {
+     width: 90rem;
+     height: 37.688rem;
+     background-color: var(--darker-grey);
+ }
+
+ .footer-content {
+     width: 69.375rem;
+     height: 11rem;
+ }
+
+ .footer-button {
+     
+ }
