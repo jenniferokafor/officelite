@@ -1,0 +1,120 @@
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+    body {
+        width: 48rem;
+        overflow: hidden;
+    }
+
+    /* hero section */
+    
+    .logo {
+        margin: 4.5rem 35.875rem 6.5rem 2.438rem;
+    }
+
+    .hero-wrapper {
+        height: 75rem;
+        margin: 6.5rem 2.5rem 0 2.438rem;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 26.75rem 17.563rem;
+        grid-template-rows: 22rem;
+        grid-template-areas: 
+        "a b"
+        ;
+        position: relative;
+    }
+
+    .hero-text {
+        height: 22rem;
+    }
+
+    .hero-heading {
+        width: 21.188rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .hero-paragraph {
+        width: 21.563rem;
+        height: 6.5rem;
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+    
+    .illustration-charts > svg {
+        width: 17.563rem;
+        height: 19.625rem;
+    }
+
+/* pricing section */
+    
+    .pricing-section {
+    margin-left: 2.438rem;
+    margin-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: absolute;
+    bottom: -178%;
+    left: 0;
+    }
+
+    .plans {
+    display: grid;
+    grid-template-columns: 22.125rem 13.813rem;
+    grid-template-rows: 2.75rem 4.25rem 3.25rem 3.5rem;
+    grid-template-areas: 
+    "a h"
+    "b h"
+    "c h"
+    "d h"
+    ;
+    width: 43.063rem;
+    height: 19.75rem;
+    align-items: unset;
+    padding: 3rem 4.25rem 3rem 3rem;
+    margin-left: 2.438rem;
+    margin-right: 2.5rem;
+    }
+
+    .plan-name {
+        grid-area: a;
+    }
+
+    .pricing {
+        grid-area: b;
+    }
+
+    .users {
+        grid-area: c;
+    }
+
+    .trial-button {
+        grid-area: d;
+    }
+
+    .benefits {
+        grid-area: h;
+        text-align: justify;
+    }
+
+/* footer */
+footer {
+    width: 48rem;
+    height: 61.625rem;
+    margin-right: 0;
+    overflow-y: hidden;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 42rem;
+}
+
+.countdown {
+    align-items: center;
+}
+
+}
