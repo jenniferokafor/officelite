@@ -31,6 +31,14 @@
     font-weight: 700;
 }
 
+.link-button:hover {
+    cursor: pointer;
+}
+
+.link-button:active {
+    opacity: 75%;
+}
+
 
 /*hero section */
 
@@ -104,11 +112,6 @@
 
 .hero-button:hover {
     background-color: var(--light-blue);
-    cursor: pointer;
-}
-
-.hero-button:active {
-    opacity: 75%;
 }
 
 .illustration-charts {
@@ -175,9 +178,17 @@
     color: var(--blue);
 }
 
+.basic-ult-button:hover {
+    background-color: rgb(195,203,251);
+}
+
 .pro-button {
     color: var(--blue);
     background-color: white;
+}
+
+.pro-button:hover {
+    background-color: #F2F2F2;
 }
 
 .pro-plan-svg {
@@ -210,13 +221,20 @@
      grid-area: timer;
      display: flex;
      flex-direction: column;
+     row-gap: 1rem;
  }
 
  .coming-soon {
      text-transform: uppercase;
      font-size: 1rem;
      font-weight: 700;
+     letter-spacing: 0.313rem;
      color: white;
+
+ }
+
+ .date-of-launch {
+     color: var(--blue);
  }
 
  .timer {
@@ -251,7 +269,17 @@
     opacity: 0.5;
 }
 
- .footer-button {
+ .footer-button-div {
      grid-area: button;
      align-self: center;
+     
+ }
+
+ .footer-button {
+    background-color: var(--blue);
+    color: white;
+ }
+
+ .footer-button:hover {
+    background-color: var(--light-blue);
  }
