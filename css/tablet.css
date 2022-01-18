@@ -1,7 +1,8 @@
+
+
 @media only screen and (min-width: 376px) and (max-width: 768px) {
     body {
         width: 48rem;
-        overflow: hidden;
     }
 
     /* hero section */
@@ -11,7 +12,7 @@
     }
 
     .hero-wrapper {
-        height: 75rem;
+        height: 72rem;
         margin: 6.5rem 2.5rem 0 2.438rem;
     }
 
@@ -56,7 +57,7 @@
     flex-direction: column;
     row-gap: 1rem;
     position: absolute;
-    bottom: -178%;
+    bottom: -170%;
     left: 0;
     }
 
@@ -70,12 +71,12 @@
     "c h"
     "d h"
     ;
-    width: 43.063rem;
-    height: 19.75rem;
+    width: 38rem;
+    height: 15rem;
     align-items: unset;
     padding: 3rem 4.25rem 3rem 3rem;
-    margin-left: 2.438rem;
-    margin-right: 2.5rem;
+    margin-left: -0.7rem;
+   
     }
 
     .plan-name {
@@ -102,17 +103,24 @@
 /* footer */
 footer {
     width: 48rem;
-    height: 61.625rem;
+    height: 62rem;
+    overflow: hidden;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    padding-top: 42rem;
+    row-gap: 3rem;
+    padding: 40rem 0 0 0;
+    margin-left: -10rem;
 }
 
 .countdown {
     align-items: center;
+}
+
+.coming-soon {
+    padding-bottom: 1rem;
 }
 
 }
