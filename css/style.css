@@ -114,6 +114,10 @@
     background-color: var(--light-blue);
 }
 
+.hero-text {
+    width: clamp(20.438rem, 30vw, 21.563rem);
+}
+
 .illustration-charts {
     grid-area: b;
 }
