@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
 
 :root {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 16px;
@@ -12,6 +10,11 @@
     --dark-grey: rgba(51, 57, 80, 1);
     --darker-grey: rgba(37, 41, 58, 1);
     --orange: rgba(240, 91, 91, 1);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
