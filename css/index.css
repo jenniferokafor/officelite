@@ -14,7 +14,11 @@
     --orange: rgba(240, 91, 91, 1);
 }
 
-main {
+.main-container {
+    background: url(/assets/home/bg-pattern-header.svg) no-repeat #FAFAFA;
+    background-size: 600px;
+    background-position-x: 40%;
+    background-position-y: -7%;
     overflow: hidden;
 }
 
@@ -37,10 +41,7 @@ main {
     opacity: 75%;
 }
 
-
 .logo {
-    padding: 0;
-  
     margin: 5.063rem 70rem 6.375rem 10.313rem;
 }
 
@@ -53,13 +54,34 @@ main {
     "i"
     "t"
     ;
+    padding-right: 1rem;
 }
 
-.illustration-charts > img{
+/* using 1024px/64rem as start of desktop screen sizes */
+@media (min-width: 48rem) {
+    .main-container {
+    background-size: 600px;
+    background-position-x: 250%;
+    }
+}
+
+@media (min-width: 64rem) {
+    .main-container {
+        background-size: 850px;
+        background-position-x: 110%;
+        background-position-y: -30%;
+        }
+
+    .hero {
+        margin-left: 6.5rem;
+    }
+}
+
+.illustration-charts {
     grid-area: i;
     min-width: 20rem;
     max-width: 30rem;
-    height: clamp(12rem, 3rem + 67vh, 34rem);
+    height: clamp(12rem, 1rem + 67vh, 34rem);
     background: url(/assets/home/illustration-charts.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -68,6 +90,16 @@ main {
 .hero-text {
     grid-area: t;
     max-width: 33.75rem;
+    text-align: center;
+}
+
+/* using 30rem/479px as the assumed start of mobile screen sizes, 
+and 48rem/767px as start of tablet screen sizes*/
+
+@media (min-width: 30rem) {
+    .hero-text {
+        text-align: left;
+    }
 }
 
 @media (min-width: 48rem) {
@@ -92,19 +124,19 @@ main {
 
 .hero-heading {
     
-    font-size: clamp(2rem, 2.8vw, 3.5rem);
-    line-height: clamp(3rem, 50%, 4rem);
+    font-size: clamp(2rem, 1rem + 2.8vw, 3.5rem);
+    line-height: clamp(3rem, 7vh, 4rem);
     font-weight: 700;
-    text-align: left;
-    max-width: 33.75rem;
+    color: var(--dark-grey);
 }
 
 .hero-paragraph {
     
-    font-size: max(1.125rem, 1rem);
-    line-height: max(1.75rem, 1.625rem);
+    font-size: clamp(1.125rem, 1rem + 1vw, 1rem);
+    line-height: max(1.75rem, 3vh, 1.625rem);
     font-weight: 400;
     margin-bottom: 5rem;
+    color: var(--grey);
 }
 
 .hero-button {
@@ -119,6 +151,7 @@ main {
 
 /* pricing section */
 .pricing-section {
+    margin-top: 3rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -142,8 +175,9 @@ main {
 
 .pro-plan {
     color: white;
-    background-color: var(--blue);
-    position: relative;
+    background: url(/assets/home/bg-pattern-pricing.svg) no-repeat var(--blue);
+    background-position-x: center;
+    background-position-y: 105%;
     
 }
 
@@ -199,9 +233,12 @@ main {
 
 /* footer */
 footer {
-    background-color: var(--darker-grey);
+    background: url(/assets/home/bg-pattern-footer.svg) no-repeat var(--darker-grey);
+    background-position-x: center;
+    background-position-y: 68%;
     width: 100%;
     height: max(25rem, 16rem);
+    overflow: hidden;
 }
 
 .footer-content {
@@ -277,3 +314,29 @@ footer {
  .footer-button:hover {
     background-color: var(--light-blue);
  }
+
+ /* using 1024px/64rem as start of desktop screen sizes */
+ @media (min-width: 64rem) {
+
+    footer {
+        background-position-x: 105%;
+        background-position-y: 50%;
+    }
+
+     .footer-content {
+         align-items: flex-start;
+         position: relative;
+    
+     }
+
+     .countdown {
+        align-items: flex-start;
+        margin-left: 6.5rem;
+     }
+
+     .footer-button {
+         position: absolute;
+         right: 7%;
+         top: 32%;
+ }
+}
