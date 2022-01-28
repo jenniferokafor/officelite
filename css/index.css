@@ -45,7 +45,9 @@ html, body {
 }
 
 .logo {
-    margin: 5.063rem 70rem 6.375rem 10.313rem;
+    margin-top: clamp(5.063rem, 6vh, 5rem);
+    margin-left: clamp(6rem, 7.6vw, 10.313rem);
+    margin-bottom: clamp(5rem, 10vh, 22rem);
 }
 
 .hero {
@@ -174,6 +176,7 @@ and 48rem/767px as start of tablet screen sizes*/
     gap: 1rem;
     align-items: center;
     padding: 1rem;
+    margin: auto 1rem;
 }
 
 .pro-plan {
@@ -188,6 +191,66 @@ and 48rem/767px as start of tablet screen sizes*/
     background-color: white;
     color: var(--dark-grey);
     
+}
+
+/* using 48rem/767px as start & 1023px/63.938rem as the end of tablet screen sizes */
+@media (min-width: 48rem) and (max-width: 63.938rem) {
+    .plans {
+        min-width: 43.063rem;
+        min-height: 19.875rem;
+    }
+
+    .pricing-section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .plans {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a"
+        "b c"
+        "d c"
+        "e e"
+        ;
+        gap: .5rem;
+        margin: auto;
+    }
+
+    .plan-name {
+        grid-area: a;
+    }
+
+    .pricing {
+        grid-area: b;
+    }
+
+    .users {
+        grid-area: d;
+    }
+
+    .benefits {
+        grid-area: c;
+    }
+
+    .footer-button-div {
+        grid-area: e;
+    }
+
+    .pro-plan {
+        background-position-x: 330%;
+        background-position-y: 60%;
+
+}
+}
+
+@media (min-width: 64rem) {
+    .pricing-section {
+        flex-wrap: nowrap;
+}
 }
 
 /* styling text content in the plans */
@@ -214,6 +277,7 @@ and 48rem/767px as start of tablet screen sizes*/
     padding-bottom: 1rem;
     text-align: center;
 }
+
 
 /* button styling */
 .basic-ult-button, .basic-ult-button:visited {
@@ -342,4 +406,4 @@ footer {
          right: 7%;
          top: 32%;
  }
-}
+ }
