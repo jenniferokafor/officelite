@@ -407,3 +407,15 @@ footer {
          top: 32%;
  }
  }
+
+
+ /* sign up form */
+  .form {
+      display: flex;
+      flex-direction: column;
+      border-radius: 25px;
+  }
+
+  .form-item {
+      
+  }
