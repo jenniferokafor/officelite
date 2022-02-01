@@ -410,12 +410,62 @@ footer {
 
 
  /* sign up form */
+
+
+ .sign-up-logo {
+     margin: 5rem auto;
+ }
+
+ .info-section, .countdown, .coming-soon {
+     margin: 0 auto;
+ }
+
   .form {
       display: flex;
       flex-direction: column;
       border-radius: 25px;
+      border: 1px solid;
+      max-width: 29rem;
+      margin: 2rem auto;
+      padding: 1rem;
+      min-width: 21rem;
+      
+      
   }
 
   .form-item {
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  input[type=text], input[type=email], input[type=tel], #plan-choice {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid rgba(116, 123, 149, 1);
+      padding: 1rem 18rem 1rem 1rem;
       
   }
+
+  input {
+    
+    color: rgba(51, 57, 80, 1);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  input::placeholder {
+      color: var(--grey);
+  }
+
+  .form-button {
+      margin-top: 2rem;
+      background-color: var(--blue);
+      color: white;
+      border: none;
+  }
+
+  .form-button:hover {
+    background-color: var(--light-blue);
+}
