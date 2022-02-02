@@ -409,33 +409,52 @@ footer {
  }
 
 
- /* sign up form */
+ /* NEW PAGE - sign up form */
 
+ body {
+    background: linear-gradient(180deg, #FAFAFA 80%, var(--darker-grey) 20%);
+ }
 
  .sign-up-logo {
      margin: 5rem auto;
  }
 
- .info-section, .countdown, .coming-soon {
+ .section-1 {
+     display: flex;
+     flex-direction: column;
      margin: 0 auto;
  }
+
+ .cs-sign-up {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.313rem;
+    color: var(--darker-grey);
+ }
+
+ .info-section {
+     max-width: 34rem;
+     text-align: center;
+ }
+
+ /* styling the form */
 
   .form {
       display: flex;
       flex-direction: column;
       border-radius: 25px;
-      border: 1px solid;
       max-width: 29rem;
-      margin: 2rem auto;
+      margin: 2rem auto 5rem auto;
       padding: 1rem;
-      min-width: 21rem;
-      
-      
+      max-width: 21rem;
+      background-color: white;
   }
 
   .form-item {
       display: flex;
       flex-direction: column;
+      
 
   }
 
@@ -444,7 +463,9 @@ footer {
       border-left: none;
       border-right: none;
       border-bottom: 1px solid rgba(116, 123, 149, 1);
-      padding: 1rem 18rem 1rem 1rem;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 1rem 3rem 1rem 1rem;
       
   }
 
@@ -468,4 +489,31 @@ footer {
 
   .form-button:hover {
     background-color: var(--light-blue);
+}
+
+/* styling timer */
+.cd-sign-up {
+    width: clamp(4.5rem, 18vw, 6rem);
+    height: clamp(5.75rem, 18vh, 8rem);
+    background-color: rgba(233,237,250,255);
+    border-radius: clamp(4px, 2vw, 18px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cn-sign-up {
+    font-size: clamp(1rem, 11vw, 3.5rem);
+    font-weight: 700;
+    color: var(--blue);
+    margin-top: .5rem;
+}
+
+.cd-text-sign-up {
+    font-size: clamp(0.7rem, 6vw, 1rem);
+    font-weight: 700;
+    color: rgba(142,147,166,255);
+    ;
+    
 }
