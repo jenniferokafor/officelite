@@ -45,9 +45,8 @@ html, body {
 }
 
 .logo {
-    margin-top: clamp(5.063rem, 6vh, 5rem);
-    margin-left: clamp(6rem, 7.6vw, 10.313rem);
-    margin-bottom: clamp(5rem, 10vh, 22rem);
+    max-width: 9.8rem;
+    margin: 2rem auto;
 }
 
 .hero {
@@ -64,6 +63,10 @@ html, body {
 
 /* using 1024px/64rem as start of desktop screen sizes */
 @media (min-width: 48rem) {
+    .logo {
+        margin-left: 2.438rem;
+    }
+
     .main-container {
     background-size: 600px;
     background-position-x: 250%;
@@ -71,6 +74,10 @@ html, body {
 }
 
 @media only screen and (min-width: 64rem) {
+    .logo {
+        padding-left: 10.313rem;
+    }
+
     .main-container {
         background-size: 850px;
         background-position-x: 110%;
@@ -78,7 +85,7 @@ html, body {
         }
 
     .hero {
-        margin-left: 6.5rem;
+        margin-left: 10.313rem;
     }
 }
 
@@ -418,18 +425,6 @@ footer {
  .sign-up-container {
      position: relative;
  }
- /* .sign-up-container {
-    background: url(/assets/sign-up/bg-pattern-side.svg) no-repeat;
-    /* background-size: 1000px;
-    /* background-position-x: 40%;
-    background-position-y: -7%; */
-    /* overflow: hidden; 
- } */
-
- /* .big-pattern-sign-up {
-     position: fixed;
-     fill: var(--grey);
- } */
 
  .section-1 {
      display: flex;
@@ -437,6 +432,9 @@ footer {
      margin: 0 auto;
      justify-content: center;
      align-items: center;
+     padding-bottom: 3rem;
+     background: url(/assets/sign-up/bg-pattern-top.svg) no-repeat;
+     background-position-x: center;
  }
 
  /* setting up logo placement across all screens */
@@ -447,6 +445,10 @@ footer {
 }
 
 @media only screen and (min-width: 48rem) {
+    .section-1 {
+        background: none;
+    }
+    
     .sign-up-logo {
         margin-left: 2.438rem;
     }
@@ -473,24 +475,35 @@ footer {
     font-weight: 400;
     margin-bottom: 1.5rem;
     color: var(--grey);
+    padding: 0 1rem 0 1rem;
  }
 
- /* resetting body and header view for desktop */
+ /* resetting positioning for large desktop view only*/
+ @media only screen and (min-width: 85rem) {
+    
 
- @media only screen and (min-width: 64rem) {
+    .section-1 {
+        margin-left: 10.313rem;
+        align-items: flex-start;
+         }
+     
+    .sign-up-logo {
+        margin-left: 0;
+        }
+
+    .info-section {
+         text-align: left;
+     }
+
     body {
         background: linear-gradient(90deg, #FAFAFA 70%, var(--darker-grey) 30%);
         }
 
-    .section-1 {
-         margin-left: 10.313rem;
-         align-items: flex-start;
-     }
- }
-
-    .info-section {
-     text-align: left;
- }
+    .hero-paragraph-sign-up {
+        padding: 0;
+    }
+}
+ 
 
 /* styling timer */
 
@@ -508,6 +521,7 @@ footer {
     font-weight: 700;
     letter-spacing: 0.313rem;
     color: var(--darker-grey);
+    align-self: center;
  }
 
 .cd-sign-up {
@@ -561,6 +575,7 @@ footer {
       border-left: none;
       border-right: none;
       border-bottom: 1px solid rgba(116, 123, 149, 1);
+      opacity: 0.5;
       box-sizing: border-box;
       width: 100%;
       padding: 2rem;
@@ -575,10 +590,17 @@ footer {
   }
 
   input::placeholder {
-      color: var(--grey);
+      color: rgba(116, 123, 149, 1);
+      opacity: 0.5;
   }
 
-  .form-button {
+  .form-button, .form-button:visited {
+        text-decoration: none;
+        padding: 1rem 1.75rem;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 700;
+        white-space: nowrap;
       margin-top: 2rem;
       background-color: var(--blue);
       color: white;
@@ -589,11 +611,14 @@ footer {
     background-color: var(--light-blue);
 }
 
-/* resetting form positioning for desktop view */
-@media only screen and (min-width: 64rem) {
+.form-button:active {
+    opacity: 75%;
+}
 
-    .info-section {
-        min-width: 1rem;
+/* resetting form positioning for large desktop view only*/
+@media only screen and (min-width: 85rem) {
+    .cs-sign-up {
+        align-self: flex-start;
     }
 
     .form {
