@@ -257,7 +257,14 @@ and 48rem/767px as start of tablet screen sizes*/
 @media only screen and (min-width: 64rem) {
     .pricing-section {
         flex-wrap: nowrap;
+        column-gap: 0.5rem;
+        justify-content: space-around;
 }
+    .plans {
+
+        gap: .5rem;
+    }
+    
 }
 
 /* styling text content in the plans */
@@ -563,6 +570,12 @@ footer {
       background-color: white;
   }
 
+  @media only screen and (max-width: 84rem) {
+      .form {
+        box-shadow: 0 3px 1px rgb(0 0 0 / 0.2);
+      }
+  }
+
   .form-item {
       display: flex;
       flex-direction: column;
@@ -626,5 +639,12 @@ footer {
         position: absolute;
         top: 16%;
         right: 16%;
+    }
+
+    .sign-up-container {
+        background: url(/assets/sign-up/bg-pattern-side.svg) no-repeat;
+        background-size: 1600px;
+        background-position-x: -320%;
+        background-position-y: 70%;
     }
 }
