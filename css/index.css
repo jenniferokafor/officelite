@@ -44,9 +44,11 @@ html, body {
     opacity: 75%;
 }
 
-.logo {
+.logo-div {
+    display: flex;
+    text-align: center;
     max-width: 9.8rem;
-    margin: 2rem auto;
+    margin: 5rem auto;
 }
 
 .hero {
@@ -63,19 +65,25 @@ html, body {
 
 /* using 1024px/64rem as start of desktop screen sizes */
 @media (min-width: 48rem) {
-    .logo {
+    .logo-div {
         margin-left: 2.438rem;
+        text-align: start;
     }
 
     .main-container {
     background-size: 600px;
     background-position-x: 250%;
     }
+
+    .hero {
+        margin-left: 2.438rem;
+    }
 }
 
 @media only screen and (min-width: 64rem) {
-    .logo {
-        padding-left: 10.313rem;
+    .logo-div {
+       margin-left: 10.313rem;
+       text-align: start;
     }
 
     .main-container {
@@ -108,11 +116,6 @@ html, body {
 /* using 30rem/479px as the assumed start of mobile screen sizes, 
 and 48rem/767px as start of tablet screen sizes*/
 
-@media only screen and (min-width: 30rem) {
-    .hero-text {
-        text-align: left;
-    }
-}
 
 @media (min-width: 48rem) {
     .hero {
@@ -130,6 +133,7 @@ and 48rem/767px as start of tablet screen sizes*/
 
     .hero-text {
         grid-area: i;
+        text-align: left;
     }
 }
     
@@ -250,19 +254,31 @@ and 48rem/767px as start of tablet screen sizes*/
     .pro-plan {
         background-position-x: 330%;
         background-position-y: 60%;
-
-}
+    }
 }
 
 @media only screen and (min-width: 64rem) {
     .pricing-section {
-        flex-wrap: nowrap;
-        column-gap: 0.5rem;
-        justify-content: space-around;
-}
-    .plans {
-
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+        grid-template-rows: 32rem;
         gap: .5rem;
+    }
+
+    .basic-plan {
+        grid-column: 2;
+    }
+
+    .pro-plan {
+        grid-column: 3;
+    }
+
+    .ultimate-plan {
+        grid-column: 4;
+    }
+
+    .plans {
+        width: clamp(270px, 1rem + 21vw , 350px);
     }
     
 }
@@ -310,6 +326,12 @@ and 48rem/767px as start of tablet screen sizes*/
 
 .pro-button:hover {
     background-color: #F2F2F2;
+}
+
+@media only screen and (min-width: 48rem) and (max-width: 63.938rem) {
+    .basic-ult-button, .pro-button {
+        max-width: 10rem;
+    }
 }
 
 /* footer */
