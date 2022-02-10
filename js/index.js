@@ -1,3 +1,5 @@
+// building the countdown timer 
+
 const countdown = () => {
     const countDate = new Date('April 22, 2022 00:00:00').getTime();
     // get the difference between the launch date and now
@@ -25,3 +27,7 @@ document.querySelector('.second').innerText = textSecond;
 };
 
 setInterval(countdown, 1000); // running the countdown every second
+
+
+// setting up client side validation on sign-up.html form
+

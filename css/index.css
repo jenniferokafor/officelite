@@ -630,13 +630,9 @@ footer {
       opacity: 0.5;
   }
 
-  input:invalid {
+  /* input:invalid {
     border-bottom: 1px solid var(--orange);
-  }
-
-  input:focus:invalid {
-    border-bottom: 1px solid rgba(116, 123, 149, 1);
-  }
+  } */
 
   .form-button, .form-button:visited {
         text-decoration: none;
