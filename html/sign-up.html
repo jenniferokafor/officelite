@@ -12,7 +12,6 @@
 </head>
 <body>
 <div class="sign-up-container">
-    <!-- <img src="/assets/sign-up/bg-pattern-side.svg" class="big-pattern-sign-up"> -->
 
     <div class= "section-1">
     <!--logo svg-->
@@ -26,7 +25,7 @@
     
     <!-- countdown -->
     <div class="countdown-sign-up"> 
-        <div class="cs-sign-up">Coming <span class= "date-of-launch">4 nov 2021</span></div>
+        <div class="cs-sign-up">Coming <span class= "date-of-launch">22 Apr 2022</span></div>
     
         <div class= "timer">
             <div class="cd-sign-up"><span class= "cn-sign-up day">47</span><span class="cd-text-sign-up">days</span></div>
@@ -40,13 +39,13 @@
     </div>
 
     <!-- sign up form -->
-    <form action="#" class="form">
+    <form action="#" class="form" id="sign-up-form">
         <div class="form-item">
-            <input type="text" id="name" name="name" placeholder="Name" aria-placeholder="Name">
+            <input type="text" id="name" name="name" placeholder="Name" aria-placeholder="Name" required="required">
         </div>
 
         <div class="form-item">
-            <input type="email" id="email" name="email" placeholder="Email Address" aria-placeholder="Email">
+            <input type="email" id="email" name="email" placeholder="Email Address" aria-placeholder="Email" required="required">
         </div>
 
         <div class="form-item">
@@ -58,14 +57,14 @@
         </div>
 
         <div class="form-item">
-            <input type="tel" id="phone" name="phone" placeholder="Phone Number" aria-placeholder="Phone">
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" aria-placeholder="Phone" required="required">
         </div>
 
         <div class="form-item">
-            <input type="text" id="company" name="company" placeholder="Company" aria-placeholder="Company">
+            <input type="text" id="company" name="company" placeholder="Company" aria-placeholder="Company" required="required">
         </div>
         
-        <button type="submit" class="form-button">Get on the list</button>
+        <button id="button" type="submit" class="form-button">Get on the list</button>
         
     </form>
 
