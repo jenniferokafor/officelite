@@ -42,13 +42,15 @@
     <form action="#" class="form" id="sign-up-form">
         <div class="form-item">
             <input type="text" id="name" name="name" placeholder="Name" aria-placeholder="Name" required="required">
+            <img class="error-icon ei-1" src="/assets/sign-up/icon-cross.svg">
         </div>
 
         <div class="form-item">
             <input type="email" id="email" name="email" placeholder="Email Address" aria-placeholder="Email" required="required">
+            <img class="error-icon ei-2" src="/assets/sign-up/icon-cross.svg">
         </div>
 
-        <div class="form-item">
+        <div class="form-item-select">
         <select id="plan-choice" name="plan-choice">
             <option value="basic-pack">Basic Pack Free</option>
             <option value="pro-pack">Pro Pack $9.99</option>
@@ -58,13 +60,15 @@
 
         <div class="form-item">
             <input type="tel" id="phone" name="phone" placeholder="Phone Number" aria-placeholder="Phone" required="required">
+            <img class="error-icon ei-3" src="/assets/sign-up/icon-cross.svg">
         </div>
 
         <div class="form-item">
             <input type="text" id="company" name="company" placeholder="Company" aria-placeholder="Company" required="required">
+            <img class="error-icon ei-4" src="/assets/sign-up/icon-cross.svg">
         </div>
         
-        <button id="button" type="submit" class="form-button">Get on the list</button>
+        <button id="btn" type="submit" class="form-button">Get on the list</button>
         
     </form>
 

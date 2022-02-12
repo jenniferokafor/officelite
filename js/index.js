@@ -31,3 +31,20 @@ setInterval(countdown, 1000); // running the countdown every second
 
 // setting up client side validation on sign-up.html form
 
+// setting up variables
+
+let name = document.getElementById('name');
+let email = document.getElementById('email');
+let phone = document.getElementById('phone');
+let company = document.getElementById('company');
+
+let errorIcon = querySelector('.error-icon');
+
+// setting up the event listener for submit button
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+
+// function for validation
+
