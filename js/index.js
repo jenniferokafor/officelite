@@ -1,7 +1,7 @@
 // building the countdown timer 
 
 const countdown = () => {
-    const countDate = new Date('April 22, 2022 00:00:00').getTime();
+    const countDate = new Date('June 22, 2022 00:00:00').getTime();
     // get the difference between the launch date and now
     const now = new Date().getTime();
     const gap = countDate - now;
