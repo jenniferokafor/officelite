@@ -673,10 +673,11 @@ footer {
         font-size: 1rem;
         font-weight: 700;
         white-space: nowrap;
-      margin-top: 2rem;
-      background-color: var(--blue);
-      color: white;
-      border: none;
+        margin-top: 2rem;
+        background-color: var(--blue);
+        color: white;
+        border: none;
+        cursor: pointer;
   }
 
   .form-button:hover {
